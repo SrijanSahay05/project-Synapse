@@ -19,5 +19,11 @@ python manage.py migrate
 # Collect static files
 python manage.py collectstatic --noinput
 
-# Start server
-exec python manage.py runserver 0.0.0.0:8000
+# Start server or run command
+if [ $# -eq 0 ]; then
+    echo "Starting development server..."
+    exec python manage.py runserver 0.0.0.0:8000
+else
+    echo "Running custom command: $@"
+    exec "$@"
+fi
