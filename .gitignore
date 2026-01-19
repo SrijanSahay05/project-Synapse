@@ -71,4 +71,5 @@ Pipfile.lock
 # Other
 *.swp
 *.swo
-.idea/
+pm_records/
+eng_records/
