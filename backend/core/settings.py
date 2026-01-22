@@ -40,12 +40,14 @@ INSTALLED_APPS = [
     'rest_framework',
     # Simple JWT
     'rest_framework_simplejwt',
+    # CORS
+    'corsheaders',
     # Token blacklist for logout
     'rest_framework_simplejwt.token_blacklist',
     # CORE APPS
     'core_user',
-    # CORS
-    'corsheaders',
+    # Feature Apps
+    'feature_workspace',
 ]
 
 MIDDLEWARE = [
